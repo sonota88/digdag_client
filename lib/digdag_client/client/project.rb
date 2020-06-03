@@ -67,6 +67,11 @@ module Digdag
         # TODO
       end
 
+      def get_project_sessions(id, params={})
+        options = params
+        get("projects/#{id}/sessions", options)['sessions']
+      end
+
       def get_archive
         # TODO
       end
