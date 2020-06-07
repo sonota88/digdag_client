@@ -67,7 +67,7 @@ module Digdag
         # TODO
       end
 
-      def get_project_sessions(id, params={})
+      def get_sessions_of_project(id, params={})
         options = params
         get("projects/#{id}/sessions", options)['sessions']
       end
